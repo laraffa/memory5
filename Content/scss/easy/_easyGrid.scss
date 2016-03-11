@@ -1,0 +1,170 @@
+@import 'layout/_mixins';
+@import "base/variables";
+
+@font-face {
+    font-family: 'parry-hotter'; /*a name to be used later*/
+    src: url("../parry-hotter/ParryHotter.ttf"); /*URL to font*/
+}
+
+.easy-title {
+  width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 90px;
+    padding-top: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    @extend %card-set;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tint {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 60px;
+}
+
+.potter {
+  font-family: 'parry-hotter';
+  font-size: 110px;
+  @media #{$brk-med3} {
+    font-size: 85px;
+  }
+}
+
+.accent {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  @media #{$brk-narrow} {
+    font-size: 18px;
+  }
+}
+
+
+input#herm {
+    margin-top: 20px;
+    width: 213px;
+    height: 305px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#herm:checked {
+    background-image: url("../img/herm.jpg");
+}
+input#herm:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
+
+input#ron {
+    margin-top: 20px;
+    width: 213px;
+    height: 305px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#ron:checked {
+    background-image: url("../img/ron.jpg");
+}
+input#ron:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
+
+input#dobby {
+    margin-top: 20px;
+    width: 213px;
+    height: 304px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#dobby:checked {
+    background-image: url("../img/dobby.jpg");
+}
+input#dobby:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
+
+input#malfoy {
+    margin-top: 20px;
+    width: 213px;
+    height: 304px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#malfoy:checked {
+    background-image: url("../img/malfoy.jpg");
+}
+input#malfoy:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
+
+input#nev {
+    margin-top: 20px;
+    width: 213px;
+    height: 304px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#nev:checked {
+    background-image: url("../img/nev.jpg");
+}
+input#nev:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
+
+input#luna {
+    margin-top: 20px;
+    width: 213px;
+    height: 304px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input#luna:checked {
+    background-image: url("../img/luna.jpg");
+}
+input#luna:not(:checked) {
+    background-image: url("../img/hlogo.jpg");
+}
